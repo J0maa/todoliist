@@ -22,3 +22,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# لا تتجاهل مجلد dist أثناء رفع الملفات إلى GitHub
+!dist/

@@ -1,10 +1,12 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
-import App from './App.jsx'
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import './index.css'  // استيراد ملفات CSS
+import App from './App'  // استيراد مكون App
 
-createRoot(document.getElementById('root')).render(
-  <StrictMode>
+// ربط تطبيق React بـ DOM
+const root = ReactDOM.createRoot(document.getElementById('root'))
+root.render(
+  <React.StrictMode>
     <App />
-  </StrictMode>,
+  </React.StrictMode>,
 )
